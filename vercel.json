@@ -14,10 +14,12 @@
   ],
   "functions": {
     "installDjango": {
-      "runtime": "python3.9",
-      "handler": "installDjango.install",
-      "includeFiles": ["installDjango.py", "djangoprojectname/**"],
-      "memory": 512
+      "runtime": "nodejs14.x",
+      "memory": 512,
+      "includeFiles": ["installDjango.js", "djangoprojectname/**"],
+      "environment": {
+        "NODE_ENV": "production"
+      }
     }
   }
 }
