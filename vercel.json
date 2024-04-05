@@ -14,9 +14,9 @@
   ],
   "functions": {
     "installDjango": {
-      "runtime": "nodejs14.x",
+      "runtime": "nodejs20.x",
       "memory": 512,
-      "includeFiles": ["installDjango.js", "djangoprojectname/**"],
+      "includeFiles": ["installDjango.js", "mychat/**"],
       "environment": {
         "NODE_ENV": "production"
       }
